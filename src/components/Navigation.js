@@ -39,7 +39,6 @@ function Navigation() {
               Contact
             </a></div>
           </div>
-          
           </div>
       
     )
