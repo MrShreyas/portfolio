@@ -33,9 +33,9 @@ function Footer() {
                     Let’s work together
                   </div>
                   <div className="mt-10 text-lg leading-7 text-teal-700">
-                    This is a template Figma file, turned into code using Anima.
-                    Learn more at AnimaApp.com This is a template Figma file,
-                    turned into code using Anima. Learn more at AnimaApp.com
+                    This portfolio website is devveloped by using figma and turned into 
+                    code using builder.io . This website is developed entirely in react.js and 
+                    tailwind css.
                   </div>
                   <img
                     alt='social media'
