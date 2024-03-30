@@ -65,6 +65,7 @@ function SkillsInside() {
                             <div className="flex flex-col w-[100%] max-md:ml-0 max-md:w-full">
                                 <div className="p-2  flex flex-col justify-center grow text-center text-teal-700 max-md:mt-10">
                                     <img
+                                    alt='akill'
                                     loading="lazy"
                                     srcSet={item.image}
                                     key={index}

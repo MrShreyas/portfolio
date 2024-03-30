@@ -38,6 +38,7 @@ function Footer() {
                     turned into code using Anima. Learn more at AnimaApp.com
                   </div>
                   <img
+                    alt='social media'
                     loading="lazy"
                     src="https://cdn.builder.io/api/v1/image/assets/TEMP/2b48a472060fbfd2eb633f7d67972dab5e47f2a6ba9670a7c936fac0f3ef0e29?apiKey=c26ba3cf46a74fdd8f38d70ad51d4072&"
                     className="mt-16 max-w-full aspect-[6.25] w-[232px] max-md:mt-10"

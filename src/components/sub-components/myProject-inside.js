@@ -61,6 +61,7 @@ function MyProjectInside() {
                         <div className="flex  p-[50px] myproject flex-col w-[50%]  max-md:ml-0 max-md:w-full">
                             <div className=" flex flex-col grow text-teal-700 whitespace-nowrap max-md:mt-10">
                                 <img
+                                alt='project'
                                 loading="lazy"
                                 srcSet={item.image}
                                 key={index}
@@ -70,7 +71,7 @@ function MyProjectInside() {
                                 {item.name}
                                 </div>
                                 <div key={index} className="mt-2.5 text-lg leading-7">{item.description}</div>
-                                <a className='cursor-pointer' key={index} >See More</a>
+                                <a className='cursor-pointer' href='' key={index} >See More</a>
                             </div>
                         </div>
                 </SwiperSlide>)}
