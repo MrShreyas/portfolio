@@ -70,7 +70,7 @@ function MyProjectInside() {
                                 {item.name}
                                 </div>
                                 <div key={index} className="mt-2.5 text-lg leading-7">{item.description}</div>
-                                <a className='cursor-pointer' onClick={ShowMore} key={index} >See More</a>
+                                <a className='cursor-pointer' key={index} >See More</a>
                             </div>
                         </div>
                 </SwiperSlide>)}
