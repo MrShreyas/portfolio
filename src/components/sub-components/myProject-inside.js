@@ -71,7 +71,8 @@ function MyProjectInside() {
                                 {item.name}
                                 </div>
                                 <div key={index} className="mt-2.5 text-lg leading-7">{item.description}</div>
-                                <a className='cursor-pointer' href='' key={index} >See More</a>
+                                <p className='cursor-pointer' key={index} >See More</p>
+                                
                             </div>
                         </div>
                 </SwiperSlide>)}
