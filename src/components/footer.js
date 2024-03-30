@@ -1,6 +1,29 @@
-
+import emailjs from '@emailjs/browser';
 
 function Footer() {
+
+    const sendMail = ()=>{
+      const mailData = {
+        name : document.getElementById('name').value, 
+        email : document.getElementById('email').value, 
+        message : document.getElementById('message').value
+      } 
+      console.log(mailData);
+      const serviceId = "service_egjixuz";
+      const templateId = "template_ys84inc";
+      const publicKey = "0zxFCcxTKeLVEDG4T";
+
+      emailjs.send(serviceId,templateId ,mailData,publicKey)
+       .then((response) => {
+        console.log("SUCCESS!", response)
+        alert("Message Sent");
+        
+       })
+       .catch((err) => {console.log(err)});
+      //  document.getElementById('name').innerHTML("")
+      //   document.getElementById('email').innerHTML("")
+      //   document.getElementById('message').innerHTML("")
+    }
     
     return(
         <div className="flex flex-col items-center px-16 pb-12 w-full bg-white max-md:px-5 max-md:max-w-full">
@@ -26,10 +49,10 @@ function Footer() {
               </div>
               <div className="flex flex-col ml-5 w-[54%] max-md:ml-0 max-md:w-full">
                 <div className="flex flex-col grow text-lg leading-7 text-teal-700 max-md:mt-10 max-md:max-w-full">
-                  <input type="text" className="bg-colour5  focus:outline-none focus:border-colour1 focus:ring-colour1 focus:ring-1 focus:border-[1px] justify-center placeholder:text-colour1 px-8 py-5 whitespace-nowrap bg-zinc-100 max-md:px-5 max-md:max-w-full" placeholder="Name" ></input>
-                  <input type="text" className="mt-4 bg-colour5  focus:outline-none focus:border-colour1 focus:ring-colour1 focus:ring-1 focus:border-[1px] justify-center placeholder:text-colour1 px-8 py-5 whitespace-nowrap bg-zinc-100 max-md:px-5 max-md:max-w-full" placeholder="Email" ></input>
-                  <textarea className="mt-4 bg-colour5  focus:outline-none focus:border-colour1 focus:ring-colour1 focus:ring-1 focus:border-[1px] justify-center placeholder:text-colour1 px-8 py-5 whitespace-nowrap bg-zinc-100 max-md:px-5 max-md:max-w-full" placeholder="Type your message here" ></textarea>
-                  <button className="justify-center bg-colour3 text-colour6 items-center px-16 py-6 mt-10 max-w-full text-xl font-semibold leading-8 text-center text-white whitespace-nowrap bg-cyan-500 w-[235px] max-md:px-5">
+                  <input id="name" type="text" className="bg-colour5  focus:outline-none focus:border-colour1 focus:ring-colour1 focus:ring-1 focus:border-[1px] justify-center placeholder:text-colour1 px-8 py-5 whitespace-nowrap bg-zinc-100 max-md:px-5 max-md:max-w-full" placeholder="Name" ></input>
+                  <input id="email" type="text" className="mt-4 bg-colour5  focus:outline-none focus:border-colour1 focus:ring-colour1 focus:ring-1 focus:border-[1px] justify-center placeholder:text-colour1 px-8 py-5 whitespace-nowrap bg-zinc-100 max-md:px-5 max-md:max-w-full" placeholder="Email" ></input>
+                  <textarea id="message" className="mt-4 bg-colour5  focus:outline-none focus:border-colour1 focus:ring-colour1 focus:ring-1 focus:border-[1px] justify-center placeholder:text-colour1 px-8 py-5 whitespace-nowrap bg-zinc-100 max-md:px-5 max-md:max-w-full" placeholder="Type your message here" ></textarea>
+                  <button onClick={sendMail} className="justify-center bg-colour3 text-colour6 items-center px-16 py-6 mt-10 max-w-full text-xl font-semibold leading-8 text-center text-white whitespace-nowrap bg-cyan-500 w-[235px] max-md:px-5">
                     Submit
                 </button>
                   

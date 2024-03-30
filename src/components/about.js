@@ -17,8 +17,8 @@ function About() {
             <div className="flex flex-col ml-5 w-6/12 max-md:ml-0 max-md:w-full">
               <img
                 loading="lazy"
-                srcSet="Profile.jpg"
-                className="grow rounded-[100%]  w-full aspect-[1.16] max-md:mt-7 max-md:max-w-full"
+                srcSet="profile1.jpg"
+                className="grow rounded-[100%] h-full  w-full aspect-[1.1] max-md:mt-7 max-md:max-w-full"
               />
             </div>
           </div>
