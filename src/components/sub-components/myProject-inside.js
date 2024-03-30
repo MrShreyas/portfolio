@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import 'swiper/css';
@@ -30,10 +30,6 @@ const myProjects = [
 ]
 
 function MyProjectInside() {
-    const [isClicked , setIsClicked] = useState(false);
-    function ShowMore() {
-        setIsClicked(true);
-    }
 
     
 
