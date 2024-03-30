@@ -20,9 +20,6 @@ function Footer() {
         
        })
        .catch((err) => {console.log(err)});
-      //  document.getElementById('name').innerHTML("")
-      //   document.getElementById('email').innerHTML("")
-      //   document.getElementById('message').innerHTML("")
     }
     
     return(

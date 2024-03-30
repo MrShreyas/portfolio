@@ -21,12 +21,12 @@ const myProjects = [
         
     },
 
-    // {
-    //     "name": "Project 3",
-    //     "image": "https://cdn.builder.io/api/v1/image/assets/TEMP/e198a84435f8c926d163e43b1585325870c3229eeb4fe0b5cd3e3bf6373d468e?apiKey=c26ba3cf46a74fdd8f38d70ad51d4072&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/e198a84435f8c926d163e43b1585325870c3229eeb4fe0b5cd3e3bf6373d468e?apiKey=c26ba3cf46a74fdd8f38d70ad51d4072&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/e198a84435f8c926d163e43b1585325870c3229eeb4fe0b5cd3e3bf6373d468e?apiKey=c26ba3cf46a74fdd8f38d70ad51d4072&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/e198a84435f8c926d163e43b1585325870c3229eeb4fe0b5cd3e3bf6373d468e?apiKey=c26ba3cf46a74fdd8f38d70ad51d4072&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/e198a84435f8c926d163e43b1585325870c3229eeb4fe0b5cd3e3bf6373d468e?apiKey=c26ba3cf46a74fdd8f38d70ad51d4072&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/e198a84435f8c926d163e43b1585325870c3229eeb4fe0b5cd3e3bf6373d468e?apiKey=c26ba3cf46a74fdd8f38d70ad51d4072&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/e198a84435f8c926d163e43b1585325870c3229eeb4fe0b5cd3e3bf6373d468e?apiKey=c26ba3cf46a74fdd8f38d70ad51d4072&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/e198a84435f8c926d163e43b1585325870c3229eeb4fe0b5cd3e3bf6373d468e?apiKey=c26ba3cf46a74fdd8f38d70ad51d4072&",
-    //     "description": "This is the third project I have ever made.",
-    //     "link":"http://www.google.com"
-    // }
+    {
+        "name": "News Reporting system",
+        "image": "https://cdn.builder.io/api/v1/image/assets/TEMP/e198a84435f8c926d163e43b1585325870c3229eeb4fe0b5cd3e3bf6373d468e?apiKey=c26ba3cf46a74fdd8f38d70ad51d4072&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/e198a84435f8c926d163e43b1585325870c3229eeb4fe0b5cd3e3bf6373d468e?apiKey=c26ba3cf46a74fdd8f38d70ad51d4072&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/e198a84435f8c926d163e43b1585325870c3229eeb4fe0b5cd3e3bf6373d468e?apiKey=c26ba3cf46a74fdd8f38d70ad51d4072&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/e198a84435f8c926d163e43b1585325870c3229eeb4fe0b5cd3e3bf6373d468e?apiKey=c26ba3cf46a74fdd8f38d70ad51d4072&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/e198a84435f8c926d163e43b1585325870c3229eeb4fe0b5cd3e3bf6373d468e?apiKey=c26ba3cf46a74fdd8f38d70ad51d4072&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/e198a84435f8c926d163e43b1585325870c3229eeb4fe0b5cd3e3bf6373d468e?apiKey=c26ba3cf46a74fdd8f38d70ad51d4072&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/e198a84435f8c926d163e43b1585325870c3229eeb4fe0b5cd3e3bf6373d468e?apiKey=c26ba3cf46a74fdd8f38d70ad51d4072&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/e198a84435f8c926d163e43b1585325870c3229eeb4fe0b5cd3e3bf6373d468e?apiKey=c26ba3cf46a74fdd8f38d70ad51d4072&",
+        "description": "This is the third project I have ever made.",
+        "link":"http://www.google.com"
+    }
 ]
 
 function MyProjectInside() {
