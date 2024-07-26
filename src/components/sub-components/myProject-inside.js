@@ -1,84 +1,90 @@
-
+import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-
 import 'swiper/css';
 import 'swiper/css/pagination';
 import { EffectCoverflow, Pagination } from 'swiper/modules';
 
 const myProjects = [
     {
-        "name": "Movie Recommendation System",
-        "image": "project1.png",
-        "description": "This is the first project I have ever made. ",
-        "link":"http://www.google.com"
+        name: "Movie Recommendation System",
+        image: "project1.png",
+        description: "This is the first project I have ever made.",
+        link: "http://www.google.com"
     },
-
     {
-        "name": "Smart IVR System",
-        "image": "project2.png",
-        "description": "This is the second project I have ever made.",
-        "link":"http://www.google.com"
-        
+        name: "Smart IVR System",
+        image: "project2.png",
+        description: "This is the second project I have ever made.",
+        link: "http://www.google.com"
     },
-
     {
-        "name": "News Reporting system",
-        "image": "https://cdn.builder.io/api/v1/image/assets/TEMP/e198a84435f8c926d163e43b1585325870c3229eeb4fe0b5cd3e3bf6373d468e?apiKey=c26ba3cf46a74fdd8f38d70ad51d4072&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/e198a84435f8c926d163e43b1585325870c3229eeb4fe0b5cd3e3bf6373d468e?apiKey=c26ba3cf46a74fdd8f38d70ad51d4072&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/e198a84435f8c926d163e43b1585325870c3229eeb4fe0b5cd3e3bf6373d468e?apiKey=c26ba3cf46a74fdd8f38d70ad51d4072&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/e198a84435f8c926d163e43b1585325870c3229eeb4fe0b5cd3e3bf6373d468e?apiKey=c26ba3cf46a74fdd8f38d70ad51d4072&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/e198a84435f8c926d163e43b1585325870c3229eeb4fe0b5cd3e3bf6373d468e?apiKey=c26ba3cf46a74fdd8f38d70ad51d4072&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/e198a84435f8c926d163e43b1585325870c3229eeb4fe0b5cd3e3bf6373d468e?apiKey=c26ba3cf46a74fdd8f38d70ad51d4072&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/e198a84435f8c926d163e43b1585325870c3229eeb4fe0b5cd3e3bf6373d468e?apiKey=c26ba3cf46a74fdd8f38d70ad51d4072&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/e198a84435f8c926d163e43b1585325870c3229eeb4fe0b5cd3e3bf6373d468e?apiKey=c26ba3cf46a74fdd8f38d70ad51d4072&",
-        "description": "This is the third project I have ever made.",
-        "link":"http://www.google.com"
+        name: "News Reporting System",
+        image: "https://cdn.builder.io/api/v1/image/assets/TEMP/e198a84435f8c926d163e43b1585325870c3229eeb4fe0b5cd3e3bf6373d468e?apiKey=c26ba3cf46a74fdd8f38d70ad51d4072&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/e198a84435f8c926d163e43b1585325870c3229eeb4fe0b5cd3e3bf6373d468e?apiKey=c26ba3cf46a74fdd8f38d70ad51d4072&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/e198a84435f8c926d163e43b1585325870c3229eeb4fe0b5cd3e3bf6373d468e?apiKey=c26ba3cf46a74fdd8f38d70ad51d4072&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/e198a84435f8c926d163e43b1585325870c3229eeb4fe0b5cd3e3bf6373d468e?apiKey=c26ba3cf46a74fdd8f38d70ad51d4072&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/e198a84435f8c926d163e43b1585325870c3229eeb4fe0b5cd3e3bf6373d468e?apiKey=c26ba3cf46a74fdd8f38d70ad51d4072&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/e198a84435f8c926d163e43b1585325870c3229eeb4fe0b5cd3e3bf6373d468e?apiKey=c26ba3cf46a74fdd8f38d70ad51d4072&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/e198a84435f8c926d163e43b1585325870c3229eeb4fe0b5cd3e3bf6373d468e?apiKey=c26ba3cf46a74fdd8f38d70ad51d4072&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/e198a84435f8c926d163e43b1585325870c3229eeb4fe0b5cd3e3bf6373d468e?apiKey=c26ba3cf46a74fdd8f38d70ad51d4072&",
+        description: "This is the third project I have ever made.",
+        link: "http://www.google.com"
+    },
+    {
+        name: "Ecommerce Website",
+        image: "https://cdn.builder.io/api/v1/image/assets/TEMP/e198a84435f8c926d163e43b1585325870c3229eeb4fe0b5cd3e3bf6373d468e?apiKey=c26ba3cf46a74fdd8f38d70ad51d4072&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/e198a84435f8c926d163e43b1585325870c3229eeb4fe0b5cd3e3bf6373d468e?apiKey=c26ba3cf46a74fdd8f38d70ad51d4072&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/e198a84435f8c926d163e43b1585325870c3229eeb4fe0b5cd3e3bf6373d468e?apiKey=c26ba3cf46a74fdd8f38d70ad51d4072&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/e198a84435f8c926d163e43b1585325870c3229eeb4fe0b5cd3e3bf6373d468e?apiKey=c26ba3cf46a74fdd8f38d70ad51d4072&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/e198a84435f8c926d163e43b1585325870c3229eeb4fe0b5cd3e3bf6373d468e?apiKey=c26ba3cf46a74fdd8f38d70ad51d4072&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/e198a84435f8c926d163e43b1585325870c3229eeb4fe0b5cd3e3bf6373d468e?apiKey=c26ba3cf46a74fdd8f38d70ad51d4072&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/e198a84435f8c926d163e43b1585325870c3229eeb4fe0b5cd3e3bf6373d468e?apiKey=c26ba3cf46a74fdd8f38d70ad51d4072&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/e198a84435f8c926d163e43b1585325870c3229eeb4fe0b5cd3e3bf6373d468e?apiKey=c26ba3cf46a74fdd8f38d70ad51d4072&",
+        description: "This is the fourth project I have ever made.",
+        link: "http://www.google.com"
     }
-]
+];
 
 function MyProjectInside() {
-
-    
-
-
-    return(
-        <>
-            <Swiper
-                effect={'coverflow'}
-                grabCursor={true}
-                centeredSlides={true}
-                slidesPerView={'auto'}
-                coverflowEffect={{
+    return (
+        <Swiper
+            effect="coverflow"
+            grabCursor={true}
+            centeredSlides={true}
+            slidesPerView={'auto'}
+            coverflowEffect={{
                 rotate: 50,
                 stretch: 0,
                 depth: 100,
                 modifier: 1,
                 slideShadows: true,
-                }}
-                direction={'vertical'}
-                pagination={{
-                clickable: true,
-                }}
-                loop={true}
-                modules={[EffectCoverflow, Pagination]}
-                className="myproject "
-            >
-                {myProjects.map((item, index)=>
-                    <SwiperSlide className='bg-colour2 rounded-3xl'>
-                        <div className="flex  p-[50px] myproject flex-col w-[50%]  max-md:ml-0 max-md:w-full">
-                            <div className=" flex flex-col grow text-teal-700 whitespace-nowrap max-md:mt-10">
-                                <img
-                                alt='project'
-                                loading="lazy"
-                                srcSet={item.image}
-                                key={index}
-                                className="w-full aspect-square"
-                                />
-                                <div key={index} className="mt-6 text-xl font-semibold leading-8">
-                                {item.name}
-                                </div>
-                                <div key={index} className="mt-2.5 text-lg leading-7">{item.description}</div>
-                                <p className='cursor-pointer' key={index} >See More</p>
-                                
-                            </div>
+            }}
+            pagination={{ clickable: true }}
+            loop={true}
+            modules={[EffectCoverflow, Pagination]}
+            className="myproject"
+            breakpoints={{
+                320: { slidesPerView: 1, spaceBetween: 20 },
+                640: { slidesPerView: 1, spaceBetween: 20 },
+                768: { slidesPerView: 2, spaceBetween: 30 },
+                1024: { slidesPerView: 3, spaceBetween: 30 },
+                1280: { slidesPerView: 4, spaceBetween: 40 },
+            }}
+        >
+            {myProjects.map((item, index) => (
+                <SwiperSlide key={index} className="bg-colour2 rounded-3xl p-5">
+                    <div className="flex flex-col items-center w-full">
+                        <img
+                            alt={item.name}
+                            loading="lazy"
+                            srcSet={item.image}
+                            className="w-full aspect-square mb-4"
+                        />
+                        <div className="text-xl font-semibold leading-8 text-center text-teal-700">
+                            {item.name}
                         </div>
-                </SwiperSlide>)}
-            </Swiper>
-    </>
-    )
+                        <div className="text-lg leading-7 text-center mt-2.5">
+                            {item.description}
+                        </div>
+                        <a
+                            href={item.link}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="mt-4 text-blue-500 underline cursor-pointer"
+                        >
+                            See More
+                        </a>
+                    </div>
+                </SwiperSlide>
+            ))}
+        </Swiper>
+    );
 }
 
 export default MyProjectInside;
