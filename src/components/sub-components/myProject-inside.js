@@ -37,7 +37,7 @@ function MyProjectInside() {
             effect="coverflow"
             grabCursor={true}
             centeredSlides={true}
-            slidesPerView={'auto'}
+            slidesPerView={1}
             coverflowEffect={{
                 rotate: 50,
                 stretch: 0,
@@ -48,28 +48,26 @@ function MyProjectInside() {
             pagination={{ clickable: true }}
             loop={true}
             modules={[EffectCoverflow, Pagination]}
-            className="myproject"
+            className="myproject w-full"
             breakpoints={{
-                320: { slidesPerView: 1, spaceBetween: 20 },
-                640: { slidesPerView: 1, spaceBetween: 20 },
-                768: { slidesPerView: 2, spaceBetween: 30 },
+                640: { slidesPerView: 2, spaceBetween: 20 },
                 1024: { slidesPerView: 3, spaceBetween: 30 },
                 1280: { slidesPerView: 4, spaceBetween: 40 },
             }}
         >
             {myProjects.map((item, index) => (
-                <SwiperSlide key={index} className="bg-colour2 rounded-3xl p-5">
-                    <div className="flex flex-col items-center w-full">
+                <SwiperSlide key={index} className="bg-colour2 rounded-3xl p-4 w-full">
+                    <div className="flex flex-col items-center w-full h-full">
                         <img
                             alt={item.name}
                             loading="lazy"
-                            srcSet={item.image}
-                            className="w-full aspect-square mb-4"
+                            src={item.image}
+                            className="w-full aspect-square object-cover mb-4 rounded-lg"
                         />
-                        <div className="text-xl font-semibold leading-8 text-center text-teal-700">
+                        <div className="text-lg font-semibold leading-7 text-center text-teal-700">
                             {item.name}
                         </div>
-                        <div className="text-lg leading-7 text-center mt-2.5">
+                        <div className="text-sm leading-6 text-center mt-2 flex-grow">
                             {item.description}
                         </div>
                         <a
