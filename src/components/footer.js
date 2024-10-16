@@ -9,14 +9,14 @@ function Footer() {
         message : document.getElementById('message').value
       } 
       console.log(mailData);
-      const serviceId = "service_egjixuz";
+      const serviceId = "service_4p98hgx";
       const templateId = "template_ys84inc";
       const publicKey = "0zxFCcxTKeLVEDG4T";
 
       emailjs.send(serviceId,templateId ,mailData,publicKey)
        .then((response) => {
         console.log("SUCCESS!", response)
-        alert("Message Sent");
+        alert("Message Sent successfully!");
         
        })
        .catch((err) => {console.log(err)});
