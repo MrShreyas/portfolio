@@ -43,8 +43,7 @@ export function About() {
             My work includes developing a smart IVR system with a voice assistant using Asterisk and Rasa for my 
             final year project. I’ve also completed two impactful internships—at Signal ATM, where I built RESTful 
             APIs using .NET, and at Bizworkz Consultancy, where I focused on modern UI development and frontend 
-            optimization. I’m driven by clean code, performance, and user experience, and I’m excited to continue 
-            growing in a fast-paced, collaborative development environment.
+            optimization. 
             </p>
 
             <div className="grid grid-cols-2 gap-4 mb-8">
