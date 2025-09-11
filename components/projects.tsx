@@ -89,7 +89,7 @@ export function Projects() {
               className={
                 filter === "all"
                   ? "bg-primary hover:bg-accent text-white rounded-full"
-                  : "text-white border-white hover:text-secondary-900 hover:bg-white rounded-full"
+                  : "text-primary border-white hover:text-secondary-900 hover:bg-white rounded-full"
               }
             >
               All
@@ -100,7 +100,7 @@ export function Projects() {
               className={
                 filter === "frontend"
                   ? "bg-primary hover:bg-accent text-white rounded-full"
-                  : "text-white border-white hover:text-secondary-900 hover:bg-white rounded-full"
+                  : "text-primary border-white hover:text-secondary-900 hover:bg-white rounded-full"
               }
             >
               Frontend
@@ -111,7 +111,7 @@ export function Projects() {
               className={
                 filter === "backend"
                   ? "bg-primary hover:bg-accent text-white rounded-full"
-                  : "text-white border-white hover:text-secondary-900 hover:bg-white rounded-full"
+                  : "text-primary border-white hover:text-secondary-900 hover:bg-white rounded-full"
               }
             >
               Backend
@@ -122,7 +122,7 @@ export function Projects() {
               className={
                 filter === "fullstack"
                   ? "bg-primary hover:bg-accent text-white rounded-full"
-                  : "text-white border-white hover:text-secondary-900 hover:bg-white rounded-full"
+                  : "text-primary border-white hover:text-secondary-900 hover:bg-white rounded-full"
               }
             >
               Fullstack
@@ -169,7 +169,7 @@ export function Projects() {
                       variant="outline"
                       size="sm"
                       asChild
-                      className="border-secondary-200 text-white hover:bg-primary hover:text-white hover:border-primary"
+                      className="border-secondary-200 text-primary hover:bg-primary hover:text-white hover:border-primary"
                     >
                       <a href={project.github} target="_blank" rel="noopener noreferrer">
                         <Github className="mr-2 h-4 w-4  " />

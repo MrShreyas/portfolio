@@ -15,7 +15,7 @@ export function Footer() {
 
           <div className="flex space-x-4 mb-6 md:mb-0">
             <Button
-              variant="outline"
+              variant="ghost"
               size="icon"
               className="rounded-full text-white border-white hover:bg-primary hover:text-white hover:border-primary"
               onClick={() => window.open("https://github.com/MrShreyas", "_blank")}
@@ -24,7 +24,7 @@ export function Footer() {
               <span className="sr-only">GitHub</span>
             </Button>
             <Button
-              variant="outline"
+              variant="ghost"
               size="icon"
               className="rounded-full text-white border-white hover:bg-primary hover:text-white hover:border-primary"
               onClick={() => window.open("https://www.linkedin.com/in/shreyas-katalkar-062283208/", "_blank")}
@@ -34,7 +34,7 @@ export function Footer() {
             </Button>
             
             <Button
-              variant="outline"
+              variant="ghost"
               size="icon"
               className="rounded-full text-white border-white hover:bg-primary hover:text-white hover:border-primary"
               onClick={() => window.location.href = "mailto:katalkarshreyas@gmail.com"}

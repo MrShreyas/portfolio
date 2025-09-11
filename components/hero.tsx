@@ -49,9 +49,9 @@ export function Hero() {
             </a>
           </div>
           <Button
-            variant="outline"
+            variant="ghost"
             size="sm"
-            className="text-white border-white hover:bg-white hover:text-primary hover:border-white"
+            className="text-white hover:bg-white hover:text-primary hover:border-white"
             onClick={() => window.open("/Shreyas_Katalkar.pdf", "_blank")}
           >
             Resume
@@ -71,7 +71,7 @@ export function Hero() {
 
         <div className="flex justify-center space-x-4 mb-12">
           <Button
-            variant="outline"
+            variant="ghost"
             size="icon"
             className="rounded-full text-white border-white hover:bg-white hover:text-primary hover:border-white"
             onClick={() => window.open("https://github.com/MrShreyas", "_blank")}
@@ -80,7 +80,7 @@ export function Hero() {
             <span className="sr-only">GitHub</span>
           </Button>
           <Button
-            variant="outline"
+            variant="ghost"
             size="icon"
             className="rounded-full text-white border-white hover:bg-white hover:text-primary hover:border-white"
             onClick={() => window.open("https://www.linkedin.com/in/shreyas-katalkar-062283208/", "_blank")}
