@@ -33,7 +33,7 @@ export function Hero() {
         )}
       >
         <div className="max-w-7xl mx-auto flex justify-between items-center">
-          <div className="text-xl font-bold text-white">SK</div>
+          <div className="text-xl font-bold bg-foreground p-4 rounded-full text-white">SK</div>
           <div className="hidden md:flex space-x-8">
             <a href="#about" className="text-white/80 hover:text-white transition-colors nav-link">
               About
@@ -51,7 +51,7 @@ export function Hero() {
           <Button
             variant="ghost"
             size="sm"
-            className="text-white hover:bg-white hover:text-primary hover:border-white"
+            className="text-white bg-foreground hover:bg-white hover:text-primary hover:border-white"
             onClick={() => window.open("/Shreyas_Katalkar.pdf", "_blank")}
           >
             Resume
@@ -73,7 +73,7 @@ export function Hero() {
           <Button
             variant="ghost"
             size="icon"
-            className="rounded-full text-white border-white hover:bg-white hover:text-primary hover:border-white"
+            className="rounded-full bg-foreground text-white border-white hover:bg-white hover:text-primary hover:border-white"
             onClick={() => window.open("https://github.com/MrShreyas", "_blank")}
           >
             <Github className="h-5 w-5" />
@@ -82,7 +82,7 @@ export function Hero() {
           <Button
             variant="ghost"
             size="icon"
-            className="rounded-full text-white border-white hover:bg-white hover:text-primary hover:border-white"
+            className="rounded-full bg-foreground text-white border-white hover:bg-white hover:text-primary hover:border-white"
             onClick={() => window.open("https://www.linkedin.com/in/shreyas-katalkar-062283208/", "_blank")}
           >
             <Linkedin className="h-5 w-5" />

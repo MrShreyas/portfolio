@@ -64,7 +64,7 @@ export function Projects() {
       description: "Developed a University final year project for creating a virtual assistant over cellular network.",
       image: "/placeholder.svg?height=600&width=800",
       tags: ["Rasa NLU", "Asterisk IP PBX", "Python", "MySQL", "AWS"],
-      category: "networking",
+      category: "others",
       github: "https://github.com/babuaditya/ivrsystem",
       demo: "#",
     },
@@ -126,6 +126,17 @@ export function Projects() {
               }
             >
               Fullstack
+            </Button>
+            <Button
+              variant={filter === "others" ? "default" : "outline"}
+              onClick={() => setFilter("others")}
+              className={
+                filter === "others"
+                  ? "bg-primary hover:bg-accent text-white rounded-full"
+                  : "text-primary border-white hover:text-secondary-900 hover:bg-white rounded-full"
+              }
+            >
+              Others
             </Button>
           </div>
         </div>
