@@ -118,7 +118,7 @@ export function Skills() {
             >
               <div className="relative h-full group">
                 {/* Glow effect */}
-                <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/20 via-transparent to-blue-500/20 rounded-xl opacity-0 group-hover:opacity-100 blur-xl transition-all duration-300" />
+                <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/20 via-transparent to-blue-500/20 rounded-xl opacity-0 group-hover:opacity-100 transition-all duration-300" />
 
                 <Card className="h-full border-slate-700/50 bg-slate-800/80 shadow-xl hover:border-cyan-500/50 transition-all duration-300 relative z-10">
                   <CardContent className="pt-8 pb-6">
