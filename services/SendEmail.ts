@@ -4,11 +4,11 @@ export const sendEmail = async ({ name, email, subject, message }: any) => {
     try {
 
         const transport = nodemailer.createTransport({
-            host: process.env.NEXT_PUBLIC_MAIL_HOST,
-            port: process.env.NEXT_PUBLIC_MAIL_HOST_PORT,
+            host: process.env.MAIL_HOST,
+            port: process.env.MAIL_HOST_PORT,
             auth: {
-                user: process.env.NEXT_PUBLIC_MAIL_USERNAME,
-                pass: process.env.NEXT_PUBLIC_MAIL_PASSWORD,
+                user: process.env.MAIL_USERNAME,
+                pass: process.env.MAIL_PASSWORD,
             },
         });
 
