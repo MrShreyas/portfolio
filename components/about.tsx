@@ -113,7 +113,7 @@ export function About() {
                 I&apos;m a passionate <span className="text-cyan-400 font-semibold">Fullstack Developer</span> with a B.Tech in Computer Science & Engineering, dedicated to building dynamic, responsive, and user-friendly web applications. I specialize in <span className="text-blue-400 font-semibold">React.js, Next.js, TypeScript</span>, and modern backend technologies.
               </p>
               <p className="text-slate-300 text-lg leading-relaxed">
-                My experience spans from developing a smart IVR system with voice assistance using Asterisk and Rasa, to building RESTful APIs with .NET, and crafting modern UIs with React. I'm passionate about clean code, performance optimization, and creating seamless user experiences.
+                My experience spans from developing a smart IVR system with voice assistance using Asterisk and Rasa, to building RESTful APIs with .NET, and crafting modern UIs with React. I&apos;m passionate about clean code, performance optimization, and creating seamless user experiences.
               </p>
             </motion.div>
 
