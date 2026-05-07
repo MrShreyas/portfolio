@@ -12,76 +12,19 @@ export function About() {
     threshold: 0.1,
   })
 
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.2,
-      },
-    },
-  }
-
-  const itemVariants = {
-    hidden: { opacity: 0, y: 30 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: {
-        duration: 0.6,
-        ease: "easeOut",
-      },
-    },
-  }
-
-  const imageVariants = {
-    hidden: { opacity: 0, x: -30, scale: 0.95 },
-    visible: {
-      opacity: 1,
-      x: 0,
-      scale: 1,
-      transition: {
-        duration: 0.8,
-        ease: "easeOut",
-      },
-    },
-  }
-
-  const infoItems = [
-    { label: "Location", value: "Pune, India" },
-    { label: "Email", value: "katalkarshreyas@gmail.com" },
-    { label: "Experience", value: "Fresher / Open" },
-    { label: "Focus", value: "Full-Stack Web Dev" },
-  ]
-
   return (
     <section id="about" className="py-24 bg-gradient-to-b from-slate-900 to-slate-950 text-white relative overflow-hidden">
-      {/* Background elements */}
-      <div className="absolute inset-0">
-        <motion.div
-          className="absolute top-20 right-0 w-96 h-96 bg-cyan-500/5 rounded-full blur-3xl"
-          animate={{ y: [0, 30, 0] }}
-          transition={{ duration: 8, repeat: Number.POSITIVE_INFINITY }}
-        />
-      </div>
-
       <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
         <motion.div
           ref={ref}
-          variants={containerVariants}
-          initial="hidden"
-          animate={inView ? "visible" : "hidden"}
+          initial={{ opacity: 0, y: 30 }}
+          animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
+          transition={{ duration: 0.6 }}
           className="grid md:grid-cols-2 gap-16 items-center"
         >
           {/* Image Section */}
-          <motion.div variants={imageVariants} className="relative">
+          <motion.div className="relative">
             <div className="relative h-[450px] rounded-xl overflow-hidden shadow-2xl">
-              {/* Glow effect behind image */}
-              <motion.div
-                className="absolute inset-0 bg-gradient-to-br from-cyan-500/20 to-blue-500/20 rounded-xl"
-                animate={{ opacity: [0.5, 0.8, 0.5] }}
-                transition={{ duration: 4, repeat: Number.POSITIVE_INFINITY }}
-              />
               <Image
                 src="/profile.jpg?height=800&width=600"
                 alt="Shreyas Katalkar"
@@ -91,7 +34,6 @@ export function About() {
               <div className="absolute inset-0 bg-gradient-to-t from-slate-950/40 via-transparent to-transparent" />
             </div>
 
-            {/* Floating badges */}
             <motion.div
               className="absolute -bottom-6 -right-6 bg-gradient-to-br from-cyan-500 to-blue-500 rounded-lg p-4 shadow-xl"
               animate={{ y: [0, -10, 0] }}
@@ -103,41 +45,59 @@ export function About() {
 
           {/* Content Section */}
           <div className="space-y-8">
-            <motion.div variants={itemVariants}>
+            <motion.div
+              initial={{ opacity: 0, x: 20 }}
+              animate={inView ? { opacity: 1, x: 0 } : { opacity: 0, x: 20 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+            >
               <h2 className="text-4xl md:text-5xl font-bold mb-6">About Me</h2>
               <div className="w-12 h-1 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-full" />
             </motion.div>
 
-            <motion.div variants={itemVariants} className="space-y-4">
+            <motion.div
+              initial={{ opacity: 0, x: 20 }}
+              animate={inView ? { opacity: 1, x: 0 } : { opacity: 0, x: 20 }}
+              transition={{ duration: 0.6, delay: 0.3 }}
+              className="space-y-4"
+            >
               <p className="text-slate-300 text-lg leading-relaxed">
                 I&apos;m a passionate <span className="text-cyan-400 font-semibold">Fullstack Developer</span> with a B.Tech in Computer Science & Engineering, dedicated to building dynamic, responsive, and user-friendly web applications. I specialize in <span className="text-blue-400 font-semibold">React.js, Next.js, TypeScript</span>, and modern backend technologies.
               </p>
               <p className="text-slate-300 text-lg leading-relaxed">
-                My experience spans from developing a smart IVR system with voice assistance using Asterisk and Rasa, to building RESTful APIs with .NET, and crafting modern UIs with React. I&apos;m passionate about clean code, performance optimization, and creating seamless user experiences.
+                My experience spans from developing a smart IVR system with voice assistance using Asterisk and Rasa, to building RESTful APIs with .NET, and crafting modern UIs with React. I'm passionate about clean code, performance optimization, and creating seamless user experiences.
               </p>
             </motion.div>
 
             {/* Info Grid */}
             <motion.div
-              variants={containerVariants}
-              initial="hidden"
-              animate={inView ? "visible" : "hidden"}
+              initial={{ opacity: 0, y: 20 }}
+              animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+              transition={{ duration: 0.6, delay: 0.4 }}
               className="grid grid-cols-2 gap-6"
             >
-              {infoItems.map((item, index) => (
-                <motion.div
+              {[
+                { label: "Location", value: "Pune, India" },
+                { label: "Email", value: "katalkarshreyas@gmail.com" },
+                { label: "Experience", value: "Fresher / Open" },
+                { label: "Focus", value: "Full-Stack Web Dev" },
+              ].map((item, index) => (
+                <div
                   key={index}
-                  variants={itemVariants}
                   className="bg-slate-800/50 backdrop-blur-sm rounded-lg p-4 border border-cyan-500/20 hover:border-cyan-500/50 transition-all"
                 >
                   <p className="text-slate-400 text-sm font-medium mb-1">{item.label}</p>
                   <p className="text-white font-semibold">{item.value}</p>
-                </motion.div>
+                </div>
               ))}
             </motion.div>
 
             {/* CTA Buttons */}
-            <motion.div variants={itemVariants} className="flex gap-4 pt-4">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+              transition={{ duration: 0.6, delay: 0.5 }}
+              className="flex gap-4 pt-4"
+            >
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
