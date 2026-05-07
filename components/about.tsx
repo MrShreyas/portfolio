@@ -83,7 +83,7 @@ export function About() {
               ].map((item, index) => (
                 <div
                   key={index}
-                  className="bg-slate-800/50 backdrop-blur-sm rounded-lg p-4 border border-cyan-500/20 hover:border-cyan-500/50 transition-all"
+                  className="bg-slate-800/80 rounded-lg p-4 border border-cyan-500/20 hover:border-cyan-500/50 transition-all"
                 >
                   <p className="text-slate-400 text-sm font-medium mb-1">{item.label}</p>
                   <p className="text-white font-semibold">{item.value}</p>

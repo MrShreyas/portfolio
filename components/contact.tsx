@@ -153,7 +153,7 @@ export function Contact() {
                 className="group block relative"
               >
                 <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/20 to-blue-500/20 rounded-xl opacity-0 group-hover:opacity-100 blur-xl transition-all duration-300" />
-                <Card className="h-full border-slate-700/50 bg-slate-800/50 backdrop-blur-sm shadow-xl hover:border-cyan-500/50 transition-all relative z-10">
+                <Card className="h-full border-slate-700/50 bg-slate-800/80 shadow-xl hover:border-cyan-500/50 transition-all relative z-10">
                   <CardContent className="p-8 flex flex-col items-center text-center">
                     <motion.div
                       className="text-cyan-400 mb-4"
@@ -180,7 +180,7 @@ export function Contact() {
           transition={{ delay: 0.3 }}
           className="max-w-3xl mx-auto"
         >
-          <Card className="border-slate-700/50 bg-slate-800/50 backdrop-blur-sm shadow-2xl">
+          <Card className="border-slate-700/50 bg-slate-800/80 shadow-2xl">
             <CardContent className="p-8">
               {isSuccess && (
                 <motion.div

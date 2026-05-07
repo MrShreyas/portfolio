@@ -139,7 +139,7 @@ export function Projects() {
                 {/* Glow effect */}
                 <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/20 via-transparent to-blue-500/20 rounded-xl opacity-0 group-hover:opacity-100 blur-xl transition-all duration-300 -z-10" />
 
-                <Card className="overflow-hidden h-full border-slate-700/50 bg-slate-800/50 backdrop-blur-sm shadow-xl hover:border-cyan-500/50 transition-all duration-300">
+                <Card className="overflow-hidden h-full border-slate-700/50 bg-slate-800/80 shadow-xl hover:border-cyan-500/50 transition-all duration-300">
                   <div className="relative h-48 w-full overflow-hidden bg-slate-700">
                     <motion.div
                       whileHover={{ scale: 1.1 }}
