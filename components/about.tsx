@@ -62,7 +62,7 @@ export function About() {
               <div className="flex flex-wrap justify-center gap-2">
                 <Badge variant="outline" className="rounded-full px-3 py-1 gap-1.5 border-white/10 bg-white/5">
                   <MapPin className="size-3 text-[oklch(0.627_0.265_303.9)]" />
-                  <span className="font-normal text-xs">Pune, IN</span>
+                  <span className="font-normal text-xs">Hyderabad, IN</span>
                 </Badge>
                 <Badge variant="outline" className="rounded-full px-3 py-1 gap-1.5 border-[oklch(0.696_0.17_162.48)/0.3] bg-[oklch(0.696_0.17_162.48)/0.1] text-[oklch(0.696_0.17_162.48)]">
                   <div className="size-1.5 animate-pulse rounded-full bg-[oklch(0.696_0.17_162.48)]" />
