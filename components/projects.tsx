@@ -31,7 +31,7 @@ export function Projects() {
       >
         <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-8 mb-12">
           <SectionHeader 
-            number="02" 
+            number="03" 
             title="Selected Work" 
             subtitle="Projects that tell a" 
             highlight="story" 

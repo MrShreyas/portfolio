@@ -24,7 +24,7 @@ export function Skills() {
         className="max-w-7xl mx-auto relative z-10"
       >
         <SectionHeader 
-          number="03" 
+          number="02" 
           title="Skills & Expertise" 
           subtitle="Tools, languages &" 
           highlight="superpowers" 

@@ -2,6 +2,7 @@
 
 import React from "react";
 import { SOCIAL_LINKS } from "@/lib/data";
+import { scrollToSection } from "@/utils/scrollUtils";
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
@@ -22,18 +23,18 @@ export function Footer() {
         </div>
 
         <nav className="flex gap-8 text-xs font-mono uppercase tracking-widest">
-          <a href="#home" className="hover:text-white transition-colors">Home</a>
-          <a href="#about" className="hover:text-white transition-colors">About</a>
-          <a href="#projects" className="hover:text-white transition-colors">Projects</a>
-          <a href="#skills" className="hover:text-white transition-colors">Skills</a>
+          <a onClick={(e)=>scrollToSection(e,"#home")} className="cursor-pointer hover:text-white transition-colors">Home</a>
+          <a onClick={(e)=>scrollToSection(e,"#about")} className="cursor-pointer hover:text-white transition-colors">About</a>
+          <a onClick={(e)=>scrollToSection(e,"#projects")} className="cursor-pointer hover:text-white transition-colors">Projects</a>
+          <a onClick={(e)=>scrollToSection(e,"#skills")} className="cursor-pointer hover:text-white transition-colors">Skills</a>
         </nav>
 
         <div className="flex gap-4">
           {SOCIAL_LINKS.map((link) => (
             <a 
               key={link.platform}
-              href={link.url}
-              className="size-8 rounded-full bg-white/5 flex items-center justify-center hover:bg-white/10 transition-colors"
+              onClick={() => window.open(link.url, "_blank")}
+              className="size-8 cursor-pointer rounded-full bg-white/5 flex items-center justify-center hover:bg-white/10 transition-colors"
               aria-label={link.platform}
             >
               <link.icon className="size-4" />

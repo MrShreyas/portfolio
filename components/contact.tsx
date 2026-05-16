@@ -42,7 +42,7 @@ export function Contact() {
                 </div>
                 <div className="flex flex-col">
                   <span className="text-xs text-[#9f9fa9] uppercase tracking-wider">Email</span>
-                  <a href="mailto:hello@shreyas.dev" className="text-neutral-50 hover:text-[oklch(0.541_0.281_293.009)] transition-colors">hello@shreyas.dev</a>
+                  <a href="mailto:katalkarshreyas@gmail.com" className="text-neutral-50 hover:text-[oklch(0.541_0.281_293.009)] transition-colors">katalkarshreyas@gmail.com</a>
                 </div>
               </div>
               <div className="flex items-center gap-4 group">
@@ -51,7 +51,7 @@ export function Contact() {
                 </div>
                 <div className="flex flex-col">
                   <span className="text-xs text-[#9f9fa9] uppercase tracking-wider">Location</span>
-                  <span className="text-neutral-50">Pune, Maharashtra, India</span>
+                  <span className="text-neutral-50">Hyderabad, Telangana, India</span>
                 </div>
               </div>
             </div>

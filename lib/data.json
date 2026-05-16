@@ -1,0 +1,130 @@
+{
+  "HERO_DATA": {
+    "name": "Shreyas",
+    "surname": "Katalkar",
+    "role": "Fullstack Web Developer",
+    "location": "Hyderabad, India",
+    "status": "Available for new opportunities",
+    "description": "I craft exceptional digital experiences with modern web technologies. Focused on building responsive, accessible, and performant applications that users love.",
+    "codeSnippet": {
+      "filename": "~/portfolio/about.tsx",
+      "content": {
+        "name": "Shreyas Katalkar",
+        "role": "Fullstack Dev",
+        "location": "Hyderabad, IN",
+        "stack": ["React", "Node", "Next.js"],
+        "available": true
+      }
+    },
+    "stats": [
+      { "label": "Projects Built", "value": "5+" },
+      { "label": "Internships", "value": "1" },
+      { "label": "Technologies", "value": "8+" }
+    ]
+  },
+  "SKILLS_DATA": [
+    {
+      "title": "FRONTEND",
+      "icon": "LayoutTemplate",
+      "skills": [
+        { "name": "React", "level": 95 },
+        { "name": "Next.js", "level": 90 },
+        { "name": "Tailwind", "level": 92 }
+      ]
+    },
+    {
+      "title": "BACKEND",
+      "icon": "Server",
+      "skills": [
+        { "name": "Node.js", "level": 88 },
+        { "name": "Express", "level": 85 },
+        { "name": "MongoDB", "level": 80 }
+      ]
+    },
+    {
+      "title": "TOOLS",
+      "icon": "Wrench",
+      "skills": [
+        { "name": "Git", "level": 90 },
+        { "name": "Figma", "level": 75 }
+      ]
+    }
+  ],
+  "PROJECTS_DATA": [
+    {
+      "id": "xpress-dm",
+      "title": "XpressDM",
+      "description": "An Instagram automation tool which automates replies and dm's",
+      "image": "/xpress-dm.png",
+      "link": "https://xpressdm.com",
+      "tags": ["Next.js", "Python", "Postgres Sql", "Redis RQ", "Redis"],
+      "category": "Web",
+      "isFeatured": true,
+      "status": "Live · Featured"
+    },
+    {
+      "id": "docs-clone",
+      "title": "Google Docs Clone",
+      "description": "A Realtime collaboration platform inspired by Google Docs, featuring concurrent editing, version history, and real-time updates.",
+      "image": "/docs_clone.png",
+      "link": "https://docs-clone-ten.vercel.app/",
+      "tags": ["Next.js", "Convex", "Clerk", "TypeScript","Tailwind"],
+      "category": "Web",
+      "status": "Live"
+    },
+    {
+      "id": "todo-app",
+      "title": "Todo App",
+      "description": "A simple todo app with local storage",
+      "image": "/todo_app.png",
+      "link": "https://build-todo-app.netlify.app",
+      "tags": ["React.js", "Node.js", "MongoDB", "Express.js", "Tailwind"],
+      "category": "Web",
+      "status": "Live"
+    },
+    {
+      "id": "ivr-project",
+      "title": "Smart IVR System",
+      "description": "A simple IVR Calling System built using Open Source tools such as Asterisk IP PBX for Sip and RASA NLU for Smart Replies",
+      "image": "https://images.unsplash.com/photo-1542831371-29b0f74f9713?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1200",
+      "link": "https://github.com/babuaditya/ivrsystem",
+      "tags": ["RASA NLU", "Asterisk", "Twilio", "Python", "MySQL", "AWS"],
+      "category": "Open Source",
+      "status": ""
+    }
+  ],
+  "TIMELINE_DATA": [
+    {
+      "year": "Sept 2025 - Present",
+      "title": "Associate Software Engineer @ Master It Software Solutions and Services Pvt Ltd",
+      "description": "Working as an Associate Software Engineer in Hyderabad, Developing and maintaining enterprise level applications using React.js, Next.js, Node.js, and Postgresql.",
+      "isCurrent": true
+    },
+    {
+      "year": "Sept 2024 - Nov 2024",
+      "title": "Front End Developer Intern @ Bizworkz Consultancy",
+      "description": "Converted 5+ Figma design screens into pixel-accurate, cross-browser-compatible interfaces, eliminating UI rework cycles."
+    },
+    {
+      "year": "Feb 2024 – Jul 2024 ",
+      "title": "Full Stack Developer Intern @ SignalATM",
+      "description": "Developed and maintained 5+ RESTful APIs using ASP.NET Core and C#, supporting dynamic data rendering across React.js frontend modules."
+    },
+    {
+      "year": "2020",
+      "title": "B.Tech in Computer Science Engineering",
+      "description": "Pursued Bachelor of Technology in Computer Science and Engineering, focusing on core computer science fundamentals and emerging technologies."
+    }
+  ],
+  "STATS_DATA": [
+    { "label": "Years Coding", "value": "2+", "icon": "Code2", "color": "oklch(0.627 0.265 303.9)" },
+    { "label": "Happy Clients", "value": "1", "icon": "Users", "color": "oklch(0.627 0.265 303.9)" },
+    { "label": "Coffee Cups", "value": "∞", "icon": "Coffee", "color": "oklch(0.627 0.265 303.9)" },
+    { "label": "Git Commits", "value": "1.2k", "icon": "GitBranch", "color": "oklch(0.627 0.265 303.9)" }
+  ],
+  "SOCIAL_LINKS": [
+    { "platform": "GitHub", "url": "https://github.com/MrShreyas", "icon": "Github" },
+    { "platform": "LinkedIn", "url": "https://www.linkedin.com/in/shreyas-katalkar-062283208", "icon": "Linkedin" },
+    { "platform": "Email", "url": "mailto:[EMAIL_ADDRESS]", "icon": "Mail" }
+  ]
+}

@@ -39,9 +39,9 @@ export function About() {
                 <div className="relative rounded-full p-1 bg-gradient-to-br from-[oklch(0.541_0.281_293.009)] to-[oklch(0.627_0.265_303.9)]">
                   <div className="rounded-full p-1 bg-zinc-950">
                     <img
-                      src="https://images.unsplash.com/photo-1683737082798-707cd6eb7c59?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3ODc2NDd8MHwxfHNlYXJjaHwxfHxkZXZlbG9wZXIlMjBwb3J0cmFpdCUyMHByb2Zlc3Npb25hbCUyMG1hbnxlbnwxfDJ8fHwxNzc4MTM2OTkwfDA&ixlib=rb-4.1.0&q=80&w=400"
+                      src="/profile.jpg"
                       alt="Shreyas Katalkar"
-                      className="size-32 object-cover rounded-full"
+                      className="size-32 scale object-cover rounded-full"
                     />
                   </div>
                 </div>

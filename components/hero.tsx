@@ -7,8 +7,9 @@ import { Navbar } from "./navbar";
 import { CodeWindow } from "./code-window";
 import { GlassCard } from "./glass-card";
 import { GradientText } from "./gradient-text";
-import { HERO_DATA } from "@/lib/data";
+import { HERO_DATA, SOCIAL_LINKS } from "@/lib/data";
 import { motion } from "framer-motion";
+import { scrollToSection } from "@/utils/scrollUtils";
 
 const TECH_ICONS = [
   { icon: Atom, label: "React", color: "oklch(0.696 0.17 162.48)" },
@@ -72,14 +73,14 @@ export function Hero() {
             </p>
 
             <div className="flex flex-wrap items-center gap-4">
-              <Button className="rounded-full px-8 h-12 gap-2 bg-gradient-to-br from-[oklch(0.541_0.281_293.009)] to-[oklch(0.627_0.265_303.9)] hover:opacity-90">
+              <Button onClick={(e) => scrollToSection(e, "#about")} className="rounded-full px-8 h-12 gap-2 bg-gradient-to-br from-[oklch(0.541_0.281_293.009)] to-[oklch(0.627_0.265_303.9)] hover:opacity-90">
                 Explore My Work
                 <ArrowRight className="size-4" />
               </Button>
-              <Button variant="outline" className="rounded-full px-8 h-12 border-white/10 bg-zinc-900/50 backdrop-blur-xl">
+              <Button onClick={() => window.open(SOCIAL_LINKS[1].url, "_blank")} variant="outline" className="rounded-full px-8 h-12 border-white/10 bg-zinc-900/50 backdrop-blur-xl">
                 GitHub
               </Button>
-              <Button variant="outline" className="rounded-full px-8 h-12 border-white/10 bg-zinc-900/50 backdrop-blur-xl">
+              <Button onClick={() => window.open(SOCIAL_LINKS[2].url, "_blank")} variant="outline" className="rounded-full px-8 h-12 border-white/10 bg-zinc-900/50 backdrop-blur-xl">
                 LinkedIn
               </Button>
             </div>

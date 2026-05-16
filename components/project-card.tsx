@@ -54,7 +54,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
            <img 
              src={project.image} 
              alt={project.title} 
-             className="w-full h-full object-cover grayscale-[0.5] group-hover:grayscale-0 transition-all duration-500"
+             className="w-full h-full object-cover group-hover:grayscale-0 transition-all duration-500"
            />
          ) : (
            <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-zinc-900 to-zinc-950">
