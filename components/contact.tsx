@@ -10,7 +10,7 @@ import { motion } from "framer-motion";
 
 export function Contact() {
   return (
-    <div id="contact" className="relative bg-zinc-950 text-neutral-50 w-full min-h-screen py-24 px-6 md:px-12">
+    <div id="contact" className="relative bg-zinc-950 text-neutral-50 w-full min-h-screen py-24 px-6 md:px-12 overflow-hidden">
       {/* Background Decor */}
       <div className="absolute bottom-[-100px] right-[-100px] size-[600px] rounded-full bg-[radial-gradient(circle,oklch(0.541_0.281_293.009/0.15),transparent_70%)] blur-[80px] pointer-events-none" />
 

@@ -12,7 +12,7 @@ import { motion } from "framer-motion";
 
 export function About() {
   return (
-    <div id="about"  className="relative bg-zinc-950 text-neutral-50 w-full min-h-screen py-24 px-6 md:px-12">
+    <div id="about" className="relative bg-zinc-950 text-neutral-50 w-full min-h-screen py-24 px-6 md:px-12 overflow-hidden">
       {/* Background Decor */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_15%_20%,oklch(0.541_0.281_293.009/0.2),transparent_40%),radial-gradient(circle_at_85%_30%,oklch(0.627_0.265_303.9/0.15),transparent_45%)] pointer-events-none" />
       <div className="absolute inset-0 bg-[linear-gradient(oklch(0.985_0_0/0.02)_1px,transparent_1px),linear-gradient(90deg,oklch(0.985_0_0/0.02)_1px,transparent_1px)] bg-[length:40px_40px] pointer-events-none" />
