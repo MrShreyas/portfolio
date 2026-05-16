@@ -6,16 +6,23 @@ import { SkillBar } from "./skill-bar";
 import { GlassCard } from "./glass-card";
 import { SectionHeader } from "./section-header";
 import { SKILLS_DATA } from "@/lib/data";
+import { motion } from "framer-motion";
 
 export function Skills() {
   return (
-    <div className="relative bg-zinc-950 text-neutral-50 w-full min-h-screen overflow-hidden py-24 px-6 md:px-12">
+    <div id="skills" className="relative bg-zinc-950 text-neutral-50 w-full min-h-screen overflow-hidden py-24 px-6 md:px-12">
       {/* Background Decor */}
       <div className="absolute top-[-200px] left-[-100px] size-[500px] rounded-full bg-[radial-gradient(circle,oklch(0.541_0.281_293.009/0.25),transparent_70%)] blur-[60px] pointer-events-none" />
       <div className="absolute top-[300px] right-[-150px] size-[500px] rounded-full bg-[radial-gradient(circle,oklch(0.627_0.265_303.9/0.22),transparent_70%)] blur-[70px] pointer-events-none" />
       <div className="absolute inset-0 bg-[linear-gradient(oklch(1_0_0/0.04)_1px,transparent_1px),linear-gradient(90deg,oklch(1_0_0/0.04)_1px,transparent_1px)] bg-[length:40px_40px] [mask-image:radial-gradient(ellipse_at_center,black_40%,transparent_80%)] pointer-events-none" />
 
-      <div className="max-w-7xl mx-auto relative z-10">
+      <motion.div 
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.8 }}
+        className="max-w-7xl mx-auto relative z-10"
+      >
         <SectionHeader 
           number="03" 
           title="Skills & Expertise" 
@@ -46,7 +53,7 @@ export function Skills() {
             ))}
           </div>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 }

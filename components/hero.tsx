@@ -8,6 +8,7 @@ import { CodeWindow } from "./code-window";
 import { GlassCard } from "./glass-card";
 import { GradientText } from "./gradient-text";
 import { HERO_DATA } from "@/lib/data";
+import { motion } from "framer-motion";
 
 const TECH_ICONS = [
   { icon: Atom, label: "React", color: "oklch(0.696 0.17 162.48)" },
@@ -19,7 +20,7 @@ const TECH_ICONS = [
 
 export function Hero() {
   return (
-    <div className="relative bg-zinc-950 text-neutral-50 w-full min-h-screen overflow-hidden font-inter">
+    <div id="home" className="relative bg-zinc-950 text-neutral-50 w-full min-h-screen overflow-hidden font-inter">
       {/* Background Gradients */}
       <div
         className="pointer-events-none absolute inset-0 z-0"
@@ -39,8 +40,14 @@ export function Hero() {
 
       <Navbar />
 
-      <main className="relative z-10 px-6 md:px-12 py-12 max-w-7xl mx-auto">
-        <section className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+      <main className="relative z-10 px-6 md:px-12 pt-32 pb-12 max-w-7xl mx-auto">
+        <motion.section 
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8 }}
+          className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center"
+        >
           {/* Hero Content */}
           <div className="lg:col-span-7 flex flex-col gap-8">
             <div className="inline-flex backdrop-blur-xl rounded-full text-[#9f9fa9] text-xs border border-white/10 px-4 py-1.5 self-start items-center gap-2 bg-zinc-900/50">
@@ -116,10 +123,16 @@ export function Hero() {
               </GlassCard>
             </div>
           </div>
-        </section>
+        </motion.section>
 
         {/* Tech Stack Bar */}
-        <section className="mt-20">
+        <motion.section 
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8, delay: 0.2 }}
+          className="mt-20"
+        >
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-8">
             <div className="flex flex-col gap-2">
               <span className="font-mono uppercase text-[#7f22fe] text-xs tracking-widest">// tech stack</span>
@@ -135,7 +148,7 @@ export function Hero() {
               </GlassCard>
             ))}
           </div>
-        </section>
+        </motion.section>
       </main>
     </div>
   );

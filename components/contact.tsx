@@ -6,6 +6,7 @@ import { GlassCard } from "./glass-card";
 import { SectionHeader } from "./section-header";
 import { ContactForm } from "./contact-form";
 import { SOCIAL_LINKS } from "@/lib/data";
+import { motion } from "framer-motion";
 
 export function Contact() {
   return (
@@ -13,7 +14,13 @@ export function Contact() {
       {/* Background Decor */}
       <div className="absolute bottom-[-100px] right-[-100px] size-[600px] rounded-full bg-[radial-gradient(circle,oklch(0.541_0.281_293.009/0.15),transparent_70%)] blur-[80px] pointer-events-none" />
 
-      <div className="max-w-7xl mx-auto relative z-10">
+      <motion.div 
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.8 }}
+        className="max-w-7xl mx-auto relative z-10"
+      >
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-16">
           {/* Left Column: Info */}
           <div className="lg:col-span-5 flex flex-col gap-8">
@@ -72,7 +79,7 @@ export function Contact() {
             </GlassCard>
           </div>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 }
