@@ -77,10 +77,10 @@ export function Hero() {
                 Explore My Work
                 <ArrowRight className="size-4" />
               </Button>
-              <Button onClick={() => window.open(SOCIAL_LINKS[1].url, "_blank")} variant="outline" className="rounded-full px-8 h-12 border-white/10 bg-zinc-900/50 backdrop-blur-xl">
+              <Button onClick={() => window.open(SOCIAL_LINKS[0].url, "_blank")} variant="outline" className="rounded-full px-8 h-12 border-white/10 bg-zinc-900/50 backdrop-blur-xl">
                 GitHub
               </Button>
-              <Button onClick={() => window.open(SOCIAL_LINKS[2].url, "_blank")} variant="outline" className="rounded-full px-8 h-12 border-white/10 bg-zinc-900/50 backdrop-blur-xl">
+              <Button onClick={() => window.open(SOCIAL_LINKS[1].url, "_blank")} variant="outline" className="rounded-full px-8 h-12 border-white/10 bg-zinc-900/50 backdrop-blur-xl">
                 LinkedIn
               </Button>
             </div>
